@@ -193,6 +193,144 @@ p {
 	}
 }
 
+
+/*GALLERY*/
+
+.gallery {
+
+	text-align: center;
+	background-color: #d2a679;
+}
+
+.page {
+
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+.gallery h2 {
+
+	color: #4c4c4c;
+	margin-top: 80px;
+}
+
+.gallery p {
+
+	margin-bottom: 70px;
+}
+
+.main_container {
+
+	width: 1200px;
+	display: block;
+	margin-right: 70px;
+	margin-bottom: 100px;
+	height: 300px;
+	background-color: red;
+	align-self: center;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px black;
+	border-radius: 10px;
+}
+
+.long_container {
+
+	height: 100%;
+}
+
+.item {
+
+	height: 100%;
+	width: 400px;
+	float: left;
+}
+
+.see_previous,
+.see_next {
+
+	height: 100%;
+	width: 50px;
+	position: absolute;
+	left: 0px;
+	display: flex;
+	transition: all 0.2s ease-in-out;
+}
+
+.see_next {
+
+	right: 0;
+	left: auto;
+}
+
+.arrow_next {
+
+	transform: rotate(180deg);
+}
+
+.arrow_previous,
+.arrow_next {
+	width: 100%;
+	align-self: center;
+}
+
+.see_previous:hover,
+.see_next:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+#one {
+	background-image: url("../images/img_1.jpg");
+}
+
+#two {
+	background-image: url("../images/img_2.jpg");
+}
+
+#three {
+	background-image: url("../images/img_3.jpg");
+}
+
+#four {
+	background-image: url("../images/img_4.jpg");
+}
+
+#five {
+	background-image: url("../images/img_5.jpg");
+}
+
+#six {
+	background-image: url("../images/img_6.jpg");
+}
+
+#seven {
+	background-image: url("../images/img_7.jpg");
+}
+
+#eight {
+	background-image: url("../images/img_8.jpg");
+}
+
+#nine {
+	background-image: url("../images/img_9.jpg");
+}
+
+
 /*PRICING*/
 
 .pricing {
@@ -272,7 +410,16 @@ p {
 		width: 80%;
 		margin-left: 25px;
 	}
+
+.main_container {
+
+		width: 100%;
+	}
+
 }
+
+
+
 
 /*TEAM*/
 
@@ -390,6 +537,11 @@ p {
 
 	border-color: #27ae60;
 }
+
+.input-group-lg>.icon {
+	height: 30px !important;
+}
+
 
 .contact .btn {
 

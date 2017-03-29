@@ -38,6 +38,7 @@
     			<ul class="nav navbar-nav navbar-right">
     				<li><a href="#header">Home</a></li>
     				<li><a href="#services">services</a></li>
+    				<li><a href="#gallery">gallery</a></li>
     				<li><a href="#pricing">pricing</a></li>
     				<li><a href="#team">team</a></li>
     				<li><a href="#client">clients</a></li>
@@ -58,8 +59,8 @@
 				<div class="col-lg-6 col-md-6 wow bounceInLeft">
 					<h1>Responsive web design</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<button class="btn btn-lg btn-primary">Buy Now</button>
-					<button class="btn btn-lg btn-success">View Detail</button>
+					<button class="btn btn-lg btn-primary" onclick="location.href='#pricing';">Buy Now</button>
+					<button class="btn btn-lg btn-success" onclick="location.href='#services';">View Detail</button>
 				</div>
 				<div class="col-lg-6 col-md-6 wow bounceInRight">
 					<img src="images/responsive-web-design2.jpg">
@@ -103,6 +104,38 @@
 	<!-- End Services -->
 
 
+<!-- Gallery -->
+
+	<div id="gallery" class="gallery">
+		<div class="container">
+			<div class="row">
+				<h2 class="wow fadeInUp">Gallery</h2>
+				<p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada lorem vitae elementum efficitur. Praesent semper feugiat volutpat.  Suspendisse et sollicitudin neque, sed tristique nisi. Cras a nisl efficitur, volutpat ex vitae, mattis leo. Maecenas maximus rutrum varius. Sed ut dictum nibh. Vestibulum nisi ex, faucibus nec volutpat dictum, malesuada non nulla.</p>
+				<div class="col-lg-9 col-md-9>
+					<div class="page">
+						<div class="main_container">
+							<div class="see_previous"><img src="images/arrow.png" class="arrow_previous"></div>
+							<div class="see_next"><img src="images/arrow.png" class="arrow_next"></div>
+							<div class="long_container">
+								<div class="item" id="one"></div>
+								<div class="item" id="two"></div>
+								<div class="item" id="three"></div>
+								<div class="item" id="four"></div>
+								<div class="item" id="five"></div>
+								<div class="item" id="six"></div>
+								<div class="item" id="seven"></div>
+								<div class="item" id="eight"></div>
+								<div class="item" id="nine"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- End Gallery -->
+
 	<!-- Pricing -->
 
 	<div id="pricing" class="pricing">
@@ -113,7 +146,7 @@
 				<div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
 					<div class="packages bronze">
 						<h4>Bronze</h4>
-						<h1>9.99</h1>
+						<h1>9.99 $</h1>
 						<b>Monthly</b>
 						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
 						<hr>
@@ -129,7 +162,7 @@
 				<div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
 					<div class="packages silver">
 						<h4>Silver</h4>
-						<h1>19.99</h1>
+						<h1>19.99 $</h1>
 						<b>Monthly</b>
 						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
 						<hr>
@@ -145,7 +178,7 @@
 				<div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.6s">
 					<div class="packages gold">
 						<h4>Gold</h4>
-						<h1>29.99</h1>
+						<h1>29.99 $</h1>
 						<b>Monthly</b>
 						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
 						<hr>
@@ -161,7 +194,7 @@
 				<div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2s">
 					<div class="packages premium">
 						<h4>Premium</h4>
-						<h1>39.99</h1>
+						<h1>39.99 $</h1>
 						<b>Monthly</b>
 						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
 						<hr>
@@ -182,7 +215,7 @@
 	<!-- End Pricing -->
 
 
-	<!-- End Pricing -->
+	<!-- Team -->
 
 	<div id="team" class="team">
 		<div class="container">
@@ -268,27 +301,44 @@
 		<div class="container">
 			<div class="row">
 				<h2 class="wow fadeInUp">Contact</h2>
-				<p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<div class="col-lg-6 col-md-6">
-					<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
-						<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name">
+				<p class="wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<form id="register-form">
+					<div class="col-lg-6 col-md-6">
+						<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+							<span class="input-group-addon icon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input name="firstName" type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="First Name">
+						</div>
+						<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.0s">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input name="secondName" type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Second Name">
+						</div>
+						<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
+							<span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+							<input name="email" type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+						</div>
+						<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.4s">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+							<input name="password" id="password" type="password" class="form-control" aria-describedby="sizing-addon1" placeholder="Password">
+						</div>
+						<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+							<input name="password2" type="password" class="form-control" aria-describedby="sizing-addon1" placeholder="Re-enter Password">
+						</div>
+						<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.8s">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+							<input name="phoneNumber" type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
+						</div>
 					</div>
-					<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s">
-						<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address">
+					<div class="col-lg-6 col-md-6">
+						<div class="input-group wow fadeInUp" data-wow-delay="2s">
+							<textarea name="" id="" cols="80" rows="11" class="form-control"></textarea>
+						</div>
+						<div class="checkbox input-group wow fadeInUp" data-wow-delay="2.6s">
+	  						<label><input name="agreement" type="checkbox" value="agree">I have read, consent and agree to Company's User Agreement and Privacy Policy(including the processing and disclosing of my personal data), and I am of legal age. I understand that I can change my communication preferences at any time. Please read the Key Payment and ServiceInformation.</label>
+						</div>
+						<button class="btn btn-lg wow fadeInUp" data-wow-delay="2.6s">Submit Your Message</button>
 					</div>
-					<div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
-						<span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
-						<input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number">
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<div class="input-group wow fadeInUp" data-wow-delay="2s">
-						<textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
-					</div>
-					<button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Submit Your Message</button>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -325,18 +375,18 @@
 					<input type="email" placeholder="Subscribe For Updates"><button class="btn btn-primary">Subscribe</button>
 				</div>
 			</div>
-			
 		</div>
-		
 	</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/wow.min.js"></script>
-    <script>
-    	new WOW().init();
-  	</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.3.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
